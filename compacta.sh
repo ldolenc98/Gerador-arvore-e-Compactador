@@ -1,5 +1,7 @@
 #!/bin/bash
 
+cd ./
+
 mkdir projetos_backup
 
 chmod +x gera_estrutura.sh 
@@ -28,5 +30,4 @@ tar -cvf src_$(date +%F).tar.gz src
 tar -cvf submit.sh_$(date +%F).tar.gz submit.sh
 
 mv *.tar.gz projetos_backup/caseA-pre-process_$(date +%F).tar.gz
-	
 	
