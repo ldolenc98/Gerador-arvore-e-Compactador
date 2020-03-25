@@ -1,6 +1,5 @@
 #!/bin/bash
 
-
 if [ ! -e $/.caseA-pre-process]
 then
   cd ./
