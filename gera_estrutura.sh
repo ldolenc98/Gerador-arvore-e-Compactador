@@ -1,30 +1,32 @@
 #!/bin/bash
 
-mkdir -p ./$1/caseA-pre-process
+if [ ! -e $1 ]
+then
 
-cd $1
+  mkdir -p ./$1
 
-mkdir control-files
-mkdir kafka-tutorial
-mkdir netezza-extraction
-mkdir ntz_tdt_to_hive
-touch ntz_tdt_to_hive.zip
-mkdir setup-env
-mkdir spark-netezza
-mkdir target
-mkdir use-case-a
+  cd $1
 
-cd caseA-pre-process
-
-touch backup_submit.sh
-touch build.sbt
-mkdir project
-mkdir spark-warehouse
-mkdir src
-touch submit.sh
-mkdir target
+  mkdir control-files
+  mkdir kafka-tutorial
+  mkdir netezza-extraction
+  mkdir ntz_tdt_to_hive
+  touch ntz_tdt_to_hive.zip
+  mkdir setup-env
+  mkdir spark-netezza
+  mkdir target
+  mkdir use-case-a
+  touch backup_submit.sh
+  touch build.sbt
+  mkdir project
+  mkdir spark-warehouse
+  mkdir src
+  touch submit.sh
 
 
-cd ..
+  cd ..
 
-tree
+  tree
+else
+  echo "Este diretório já existe"
+fi
