@@ -9,6 +9,7 @@ chmod +x gera_estrutura.sh
 ./gera_estrutura.sh 
 
 tar -cvf caseA-pre-process_$(date +%F).tar.gz caseA-pre-process
+mv caseA-pre-process_$(date +%F).tar.gz projetos_backup
 tar -cvf control-files_$(date +%F).tar.gz control-files
 tar -cvf kafka-tutorial_$(date +%F).tar.gz kafka-tutorial
 tar -cvf netezza-extraction_$(date +%F).tar.gz netezza-extraction
