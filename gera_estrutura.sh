@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if [ ! -e $1]
+if [ -e $1]
 
 then
         mkdir -p /home/semantix/claro/projects/$1
