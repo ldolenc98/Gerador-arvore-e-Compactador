@@ -1,35 +1,29 @@
 #!/bin/bash
 
-if [ -e $1]
+mkdir -p ./$1/caseA-pre-process
 
-then
-        mkdir -p /home/semantix/claro/projects/$1
-        mkdir /home/semantix/claro/projects/control-files
-        mkdir /home/semantix/claro/projects/kafka-tutorial
-        mkdir /home/semantix/claro/projects/netezza-extraction
-        mkdir /home/semantix/claro/projects/ntz_tdt_to_hive
-        touch /home/semantix/claro/projects/ntz_tdt_to_hive.zip
-        mkdir /home/semantix/claro/projects/setup-env
-        mkdir /home/semantix/claro/projects/spark-netezza
-        mkdir /home/semantix/claro/projects/target
-        mkdir /home/semantix/claro/projects/use-case-a
+cd $1
 
-        cd $1
+mkdir control-files
+mkdir kafka-tutorial
+mkdir netezza-extraction
+mkdir ntz_tdt_to_hive
+touch ntz_tdt_to_hive.zip
+mkdir setup-env
+mkdir spark-netezza
+mkdir target
+mkdir use-case-a
 
-       touch backup_submit.sh
-       touch build.sbt
-       mkdir project
-       mkdir spark-warehouse
-       mkdir src
-       touch submit.sh
-       mkdir target
+cd caseA-pre-process
 
-       cd ..
+touch backup_submit.sh
+touch build.sbt
+mkdir project
+mkdir spark-warehouse
+mkdir src
+touch submit.sh
+mkdir target
 
-       tree
-else 
-        echo "O arquivo já existe"
-  
-fi
-  
+cd ..
 
+tree
