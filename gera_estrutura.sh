@@ -23,9 +23,8 @@ then
   mkdir src
   touch submit.sh
   
-  cd ..
-
   tree
+
 else
   echo "Este diretório já existe"
 fi
