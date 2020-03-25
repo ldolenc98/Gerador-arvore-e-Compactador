@@ -26,6 +26,9 @@ tar -cvf spark-netezza(date +%F).tar.gz spark-netezza
 mv spark-netezza(date +%F).tar.gz projetos_backup
 tar -cvf use-case-a(date +%F).tar.gz use-case-a
 mv use-case-a(date +%F).tar.gz projetos_backup
+
+
+mv projetos_backup /
 	
 cd caseA-pre-process
 
