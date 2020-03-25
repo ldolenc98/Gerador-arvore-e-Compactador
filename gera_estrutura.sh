@@ -1,22 +1,20 @@
 #!/bin/bash
 
-if [ !-e $./caseA-pre-process]
+if [ ! -e $1]
 
 then
-        cd ./
+        mkdir -p /home/semantix/claro/projects/$1
+        mkdir /home/semantix/claro/projects/control-files
+        mkdir /home/semantix/claro/projects/kafka-tutorial
+        mkdir /home/semantix/claro/projects/netezza-extraction
+        mkdir /home/semantix/claro/projects/ntz_tdt_to_hive
+        touch /home/semantix/claro/projects/ntz_tdt_to_hive.zip
+        mkdir /home/semantix/claro/projects/setup-env
+        mkdir /home/semantix/claro/projects/spark-netezza
+        mkdir /home/semantix/claro/projects/target
+        mkdir /home/semantix/claro/projects/use-case-a
 
-        mkdir caseA-pre-process
-        mkdir control-files
-        mkdir kafka-tutorial
-        mkdir netezza-extraction
-        mkdir ntz_tdt_to_hive
-        touch ntz_tdt_to_hive.zip
-        mkdir setup-env
-        mkdir spark-netezza
-        mkdir target
-        mkdir use-case-a
-
-        cd caseA-pre-process
+        cd $1
 
        touch backup_submit.sh
        touch build.sbt
