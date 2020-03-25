@@ -1,7 +1,5 @@
 #!/bin/bash
 
- 
-
 mkdir projetos_backup
 
 chmod +x gera_estrutura.sh 
