@@ -20,10 +20,10 @@ tar -cvf ntz_tdt_to_hive.zip_$(date +%F).tar.gz ntz_tdt_to_hive.zip
 mv ntz_tdt_to_hive.zip_$(date +%F).tar.gz /projetos_backup
 tar -cvf setup-env_$(date +%F).tar.gz setup-env
 mv setup-env_$(date +%F).tar.gz /projetos_backup
-tar -cvf spark-netezza(date +%F).tar.gz spark-netezza
-mv spark-netezza(date +%F).tar.gz /projetos_backup
-tar -cvf use-case-a(date +%F).tar.gz use-case-a
-mv use-case-a(date +%F).tar.gz /projetos_backup
+tar -cvf spark-netezza_$(date +%F).tar.gz spark-netezza
+mv spark-netezza_$(date +%F).tar.gz /projetos_backup
+tar -cvf use-case-a_$(date +%F).tar.gz use-case-a
+mv use-case-a_$(date +%F).tar.gz /projetos_backup
 tar -cvf backup_submit.sh_$(date +%F).tar.gz backup_submit.sh
 mv backup_submit.sh_$(date +%F).tar.gz /projetos_backup
 tar -cvf build.sbt_$(date +%F).tar.gz build.sbt
