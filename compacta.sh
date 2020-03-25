@@ -1,7 +1,6 @@
 #!/bin/bash
 
-
-cd ./ 
+ 
 
 mkdir projetos_backup
 
@@ -19,7 +18,7 @@ tar -cvf setup-env_$(date +%F).tar.gz setup-env
 tar -cvf spark-netezza(date +%F).tar.gz spark-netezza
 tar -cvf use-case-a(date +%F).tar.gz use-case-a
 
-mv *.tar.gz /projetos_backup
+mv *.tar.gz projetos_backup
 	
 cd caseA-pre-process
 
@@ -30,6 +29,6 @@ tar -cvf spark-warehouse_$(date +%F).tar.gz spark-warehouse
 tar -cvf src_$(date +%F).tar.gz src
 tar -cvf submit.sh_$(date +%F).tar.gz submit.sh
 
-mv *.tar.gz /projetos_backup/caseA-pre-process_$(date +%F).tar.gz
+mv *.tar.gz projetos_backup/caseA-pre-process_$(date +%F).tar.gz
 	
 	
