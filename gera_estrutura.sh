@@ -22,8 +22,7 @@ then
   mkdir spark-warehouse
   mkdir src
   touch submit.sh
-
-
+  
   cd ..
 
   tree
