@@ -6,6 +6,8 @@ chmod +x gera_estrutura.sh
 
 ./gera_estrutura.sh $1
 
+cd $1
+
 tar -cvf control-files_$(date +%F).tar.gz control-files
 mv control-files_$(date +%F).tar.gz /projetos_backup
 tar -cvf kafka-tutorial_$(date +%F).tar.gz kafka-tutorial
