@@ -1,6 +1,7 @@
 #!/bin/bash
 
-if [ ! -e $/.caseA-pre-process]
+if [ ! -d /.caseA-pre-process]
+
 then
   cd ./
 
