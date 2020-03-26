@@ -1,6 +1,6 @@
 #!/bin/bash
 
-mkdir /mnt/c/Users/Josy/Desktop/Linux/$1_backup
+mkdir /$1_backup
 
 chmod +x gera_estrutura.sh 
 
@@ -10,7 +10,7 @@ cd $1
 
 tar -cvf $1_$(date +%Y%m%d).tar.gz $1_$(date +%Y%m%d)
 
-mv $1_$(date +%Y%m%d).tar.gz /mnt/c/Users/Josy/Desktop/Linux/$1_backup
+mv $1_$(date +%Y%m%d).tar.gz /$1_backup
 
 
 
