@@ -24,6 +24,8 @@ then
   touch submit.sh
   
   tree
+  
+  mkdir -p $1_$(date)
 
 else
   echo "Este diretório já existe"
