@@ -1,6 +1,6 @@
 #!/bin/bash
 
-mkdir /$1_backup
+mkdir -p /$1_backup
 
 chmod +x gera_estrutura.sh 
 
