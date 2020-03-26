@@ -25,7 +25,7 @@ then
   
   tree
   
-  mkdir -p $1_$(date)
+  mkdir -p $1_$(date +%F)
 
 else
   echo "Este diretório já existe"
