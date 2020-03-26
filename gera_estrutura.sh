@@ -25,21 +25,21 @@ then
   
   tree
   
-  mkdir -p $1_$(date +%F)
-  mv control-files $1_$(date +%F)
-  mv kafka-tutorial $1_$(date +%F)
-  mv netezza-extraction $1_$(date +%F)
-  mv ntz_tdt_to_hive $1_$(date +%F)
-  mv ntz_tdt_to_hive.zip $1_$(date +%F)
-  mv setup-env $1_$(date +%F)
-  mv spark-netezza $1_$(date +%F)
-  mv use-case-a $1_$(date +%F)
-  mv backup_submit.sh $1_$(date +%F)
-  mv build.sbt $1_$(date +%F)
-  mv project $1_$(date +%F)
-  mv spark-warehouse $1_$(date +%F)
-  mv src $1_$(date +%F)
-  mv submit.sh $1_$(date +%F)
+  mkdir -p $1_$(date +%Y%m%d)
+  mv control-files $1_$(date +%Y%m%d)
+  mv kafka-tutorial $1_$(date +%Y%m%d)
+  mv netezza-extraction $1_$(date +%Y%m%d)
+  mv ntz_tdt_to_hive $1_$(date +%Y%m%d)
+  mv ntz_tdt_to_hive.zip $1_$(date +%Y%m%d)
+  mv setup-env $1_$(date +%Y%m%d)
+  mv spark-netezza $1_$(date +%Y%m%d)
+  mv use-case-a $1_$(date +%Y%m%d)
+  mv backup_submit.sh $1_$(date +%Y%m%d)
+  mv build.sbt $1_$(date +%Y%m%d)
+  mv project $1_$(date +%Y%m%d)
+  mv spark-warehouse $1_$(date +%Y%m%d)
+  mv src $1_$(date +%Y%m%d)
+  mv submit.sh $1_$(date +%Y%m%d)
   
 else
   echo "Este diretório já existe"
